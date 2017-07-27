@@ -3,6 +3,37 @@
 <head>
 <meta charset="utf-8">
 <title>Titre de la page</title>
+<style type="text/css">
+#formulaire {
+	width: 900px;
+	margin: 0 auto;
+}
+label {
+	font-family: arial, sans-serif;
+	font-size: 0.8rem;
+}
+div.row {
+	width: 100%;
+}
+fieldset {
+	margin: 20px 0;
+	border: 1px solid #8ab928;;
+}
+legend {
+	border: 1px solid #8ab928;;
+	padding: 5px 10px;
+	background-color: #8ab928;;
+	color: #FFF;
+	font-family: arial, sans-serif;
+	font-size: 1rem;
+}
+label, input, textarea {
+	margin: 10px 5px;
+}
+input, select, textarea {
+	border: 1px solid #cccccc !important;
+}
+</style>
 </head>
 
 <body>
@@ -11,31 +42,56 @@
 		<div class="row">
 			<fieldset>
 				<legend>Devis</legend>
+				<label>N° Client </label><input type="text" name="nClient">
+				<input type="checkbox" name="devisEnvoye" id="devisEnvoye"><label for="devisEnvoye">Devis envoyé</label>
+				<select name="option">
+					<option selected="selected">Option du :</option>
+					<option>Confirme du :</option>
+					<option>Solde du :</option>
+					<option>Non soldé du :</option>
+					<option>Relevé de frais terminé du :</option>
+					<option>Annulé du :</option>
+					<option>Dates fictives du :</option>
+				</select>
+				<input type="date" name="dateDebut"> et <input type="date" name="dateFin"> <br>
+				<label>Devis n° <label><input type="text" name="nDevis" style="display: inline-block; width: 20px;">
+				<select name="typeGite">
+					<option selected="selected">Gîtes de Groupes - SARL LES IRIS</option>
+					<option>Gîtes scolaires - SARL LES IRIS</option>
+				</select><br>
+				<label>Option jusqu'au <input type="date" name="dateOption" style="display: inline-block; width: 150px;">
+				<label>Arrivée à</label><input type="date" name="dateArrive" style="display: inline-block; width: 150px;">
+				<label>Départ à</label><input type="date" name="dateDepart" style="display: inline-block; width: 150px;">
+				<label>Année</label><input type="text" name="annee" style="display: inline-block; width: 85px;">
 			</fieldset>
 		</div>
 		<div class="row">
-			<div class="col30">
-				<fieldset>
-					<legend>Information Client</legend>
-				</fieldset>
-			</div>
-			<div class="col70">
-				<fieldset>
-					<legend>Prestation</legend>
-				</fieldset>
-			</div>
+			<fieldset>
+				<legend>Information Client</legend>
+				<label>Nom</label><input type="text" name="nomReservation"><label>Prénom</label><input type="text" name="prenomReservation"><label>Société ou intitulé</label><input type="text" name="societe" style="display: inline-block; width: 280px;"><br>
+				<label>Adresse</label><input type="text" name="adresse" style="display: inline-block; width: 300px;"><label>CP</label><input type="text" name="cp" style="display: inline-block; width: 100px;"><label>Ville</label><input type="text" name="ville" style="display: inline-block; width: 300px;"><br>
+				<label style="float: left;">Tél / fax / mail</label>
+				<textarea style="width: 400px;"></textarea><br>
+				<label>Formule</label><input type="text" name="formule"><label>Contact</label><input type="text" name="contact"><br>
+				<label>Groupe de </label><input type="text" name="groupeType"><label>Connu par</label><input type="text" name="connuPar"><br>
+				<label>Thème</label><input type="text" name="theme"><br>
+				<label>Lieu</label><input type="text" name="lieu"><label>Adresse</label><input type="text" name="adresseGite"><br>
+				<label>Responsable sur le séjour</label><input type="text" name="responsable">
+			</fieldset>
 		</div>
 		<div class="row">
-			<div class="col70">
-				<!-- Bloc devis demandé -->
-				<fieldset>
-					<legend>Activités et visites</legend>
-				</fieldset>
-				<fieldset>
-					<legend>Notre transporteur ou activité 8</legend>
-				</fieldset>
-			</div>
-			<div class="col30"></div>
+			<fieldset>
+				<legend>Prestation</legend>
+			</fieldset>
+		</div>
+		<div class="row">
+			<!-- Bloc devis demandé -->
+			<fieldset>
+				<legend>Activités et visites</legend>
+			</fieldset>
+			<fieldset>
+				<legend>Notre transporteur ou activité 8</legend>
+			</fieldset>
 		</div>
 	</form>
 </div>
