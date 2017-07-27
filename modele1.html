@@ -19,6 +19,9 @@ fieldset {
 	margin: 20px 0;
 	border: 1px solid #8ab928;;
 }
+#infos {
+	background: url('_img/infos.png') 90% 90% no-repeat;
+}
 legend {
 	border: 1px solid #8ab928;;
 	padding: 5px 10px;
@@ -66,7 +69,7 @@ input, select, textarea {
 			</fieldset>
 		</div>
 		<div class="row">
-			<fieldset>
+			<fieldset id="infos">
 				<legend>Information Client</legend>
 				<label>Nom</label><input type="text" name="nomReservation"><label>Prénom</label><input type="text" name="prenomReservation"><label>Société ou intitulé</label><input type="text" name="societe" style="display: inline-block; width: 280px;"><br>
 				<label>Adresse</label><input type="text" name="adresse" style="display: inline-block; width: 300px;"><label>CP</label><input type="text" name="cp" style="display: inline-block; width: 100px;"><label>Ville</label><input type="text" name="ville" style="display: inline-block; width: 300px;"><br>
@@ -76,7 +79,7 @@ input, select, textarea {
 				<label>Groupe de </label><input type="text" name="groupeType"><label>Connu par</label><input type="text" name="connuPar"><br>
 				<label>Thème</label><input type="text" name="theme"><br>
 				<label>Lieu</label><input type="text" name="lieu"><label>Adresse</label><input type="text" name="adresseGite"><br>
-				<label>Responsable sur le séjour</label><input type="text" name="responsable">
+				<label>Responsable sur le séjour</label><input type="text" name="responsable" style="display: inline-block; width: 300px;">
 			</fieldset>
 		</div>
 		<div class="row">
