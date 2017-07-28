@@ -17,25 +17,35 @@ div.row {
 }
 fieldset {
 	margin: 20px 0;
-	border: 1px solid #8ab928;;
+	border: 1px solid #8ab928;
 }
 #infos {
 	background: url('_img/infos.png') 90% 90% no-repeat;
 }
+#prestation {
+	background: url('_img/prestation.jpg') 90% 90% no-repeat;
+}
 legend {
-	border: 1px solid #8ab928;;
+	border: 1px solid #8ab928;
 	padding: 5px 10px;
-	background-color: #8ab928;;
+	background-color: #8ab928;
 	color: #FFF;
 	font-family: arial, sans-serif;
 	font-size: 1rem;
 }
-label, input, textarea {
+label, input, textarea, select {
 	margin: 10px 3px;
 	padding: 3px 2px;
 }
 input, select, textarea {
 	border: 1px solid #cccccc !important;
+}
+#prestation label {
+	display: inline-block;
+	width: 70px;
+}
+#prestation select {
+	width: 300px;
 }
 </style>
 </head>
@@ -84,8 +94,82 @@ input, select, textarea {
 			</fieldset>
 		</div>
 		<div class="row">
-			<fieldset>
+			<fieldset id="prestation">
 				<legend>Prestation</legend>
+				<label>Prestation</label>
+				<select name="prestation">
+					<option>Gestion libre option ménage non compris</option>
+					<option>Journée</option>
+					<option>Demi Pension</option>
+					<option>Pension complète</option>
+					<option>Nuit + Petit déjeuner</option>
+					<option>Déjeuner</option>
+					<option>Dîner</option>
+					<option>Gestion libre + repas traiteur + ménage</option>
+					<option>Dîner, nuit et brunch</option>
+					<option>Gestion libre forfait ménage compris</option>
+					<option>Location du gîte + restauration</option>
+					<option>Gestion libre option ménage non compris + Traiteur</option>
+					<option>Gestion libre option ménage compris + Traiteur</option>
+					<option>Déjeuner + goûter</option>
+					<option>Location de salle</option>
+					<option>Nuitée seule</option>
+				</select><br>
+				<label>Arrivée pour</label>
+				<select name="arriveeLoc">
+					<option>Dîner</option>
+					<option>Goûter</option>
+					<option>Déjeuner</option>
+					<option>Petit déjeuner</option>
+					<option>Nuit</option>
+					<option>Location du gîte</option>
+					<option>A préciser</option>
+				</select><br>
+				<label>Départ pour</label>
+				<select name="departLoc">
+					<option>Petit déjeuner avec panier repas</option>
+					<option>Petit déjeuner</option>
+					<option>Petit déjeuner avec deux paniers repas et un goûter</option>
+					<option>Déjeuner</option>
+					<option>Goûter</option>
+					<option>Dîner</option>
+					<option>Nuit</option>
+					<option>Petit déjeuner avec un panier repas + un goûter</option>
+					<option>Déjeuner avec goûter</option>
+					<option>LOcation du gîte</option>
+					<option>A préciser</option>
+					<option>Déjeuner avec goûter + panier repas dîner</option>
+					<option>Brunch</option>
+					<option>Goûter avec un panier repas pour le dîner</option>
+				</select><br>
+				<label>Partage</label>
+				<select name="partage">
+					<option>A préciser</option>
+					<option>Partage possible avec un autre groupe</option>
+					<option>Exclusivité demandée</option>
+					<option>Pas de partage du gîte</option>
+					<option>Partage impossible avec un autre groupe</option>
+					<option>Partage avec un autre groupe</option>
+				</select><br>
+				<label>Motif</label>
+				<select name="motif">
+					<option>A préciser</option>
+					<option>Taille du groupe p/ capacité</option>
+					<option>Demande du client (facturée)</option>
+					<option>Demande client (non facturée)</option>
+					<option>Type de groupe incompatible</option>
+					<option>Groupe en gestion libre</option>
+					<option>Autre groupe en partage</option>
+				</select><br>
+				<label>TS</label>
+				<select name="ts">
+					<option>Exonération (séjour d'enfants)</option>
+					<option>Exonération (adultes handicap)</option>
+					<option>Exonération (service RMI CMU)</option>
+					<option>Exonération (séjour ANNULE)</option>
+					<option>A payer</option>
+				</select><br>
+				
 			</fieldset>
 		</div>
 		<div class="row">
