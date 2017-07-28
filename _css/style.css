@@ -71,6 +71,7 @@ div.row {
 	width: 100%;
 }
 fieldset {
+	padding: 10px;
 	margin: 20px 0;
 	border: 1px solid #8ab928;
 	background-color: #FFF;
