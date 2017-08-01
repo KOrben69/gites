@@ -1,26 +1,3 @@
-<!doctype html>
-<html lang="fr">
-<head>
-<meta charset="utf-8">
-<script src="https://use.fontawesome.com/b0f2256f6e.js"></script>
-<link href="_css/style.css" type="text/css" rel="stylesheet" media="all">
-<title>Titre de la page</title>
-</head>
-
-<body>
-<nav id="menu">
-	<ul>
-		<li><a href="#">Accueil<i class="fa fa-home" aria-hidden="true"></i></a></li>
-		<li><a href="#">Rechercher une fiche<i class="fa fa-search" aria-hidden="true"></i></a></li>
-		<li><a href="#">Modifier la fiche<i class="fa fa-pencil-square-o" aria-hidden="true"></i></a></li>
-		<li><a href="#">Créer une fiche<i class="fa fa-plus" aria-hidden="true"></i></a></li>
-		<li><a href="#">Changer de modèle<i class="fa fa-file-image-o" aria-hidden="true"></i></a></li>
-		<li><a href="#">Déconnexion<i class="fa fa-power-off" aria-hidden="true"></i></a></li>
-	</ul>
-</nav>
-<div id="save">
-	<button title="Enregistrer la fiche"><i class="fa fa-check-circle fa-5x" aria-hidden="true"></i></button>
-</div>
 <div id="formulaire">
 	<form>
 		<div class="row">
@@ -152,5 +129,3 @@
 		</div>
 	</form>
 </div>
-</body>
-</html>
