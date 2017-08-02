@@ -11,6 +11,11 @@ if (!isset($_SESSION['id_user'])){
 if(is_file('models/'.$controllers.'.php')) {
 	include('models/'.$controllers.'.php');
 }
-include('controllers/'.$controllers.'.php');
+if(is_file('controllers/'.$controllers.'.php')) {
+	include('controllers/'.$controllers.'.php');
+} else {
+	include('controllers/erreur.php');
+}
+
 include('views/template/template.php');
 ?>
