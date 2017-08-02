@@ -7,12 +7,17 @@ switch($action) {
 			redirect('./index.php?controllers=home');
 		} else {
 			message('Login ou mot de passe non valide');
-			redirect('./index.php?controllers=register');
+			header('LOcation: ./index.php?controllers=register');
 		}
 	break;
 	case 'deconnexion':
 		session::deconnexion();
-		redirect('./index.php?controllers=register');
+		header('LOcation: ./index.php?controllers=register');
+	break;
+	case 'register':
+		if(isset($_SESSION['id_user'])) {
+			$action = 'home';
+		}
 	break;
 	default:
 		$action = 'register';
