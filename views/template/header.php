@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <script src="https://use.fontawesome.com/b0f2256f6e.js"></script>
 <link href="views/template/_css/style.css" type="text/css" rel="stylesheet" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <title>Titre de la page</title>
 </head>
 

@@ -123,8 +123,12 @@
 		</div>
 		<div class="row">
 			<!-- Bloc devis demandé -->
-			<fieldset>
+			<fieldset id="activite">
 				<legend>Activités et visites</legend>
+				<div class="act">
+					<span class="numact">' + i + '</span>
+					<label>Devis demandé</label><input type="checkbox" name="devis"><input type="text" name="devistext" style="display: inline-block; width: 400px;"><label>Confirmé</label><input type="checkbox" name="confirme"><label>Tarif</label><input type="text" name="tarif"><a href="#" id="btplus"><img src="views/template/_img/plus.jpg" alt="Plus" style="float: right"></a>
+				</div>
 			</fieldset>
 			<fieldset>
 				<legend>Notre transporteur ou activité 8</legend>
@@ -132,3 +136,37 @@
 		</div>
 	</form>
 </div>
+<script>
+$(document).ready(function(){
+	var i = 0;
+	
+	count(i);
+	
+	function count(n) {
+		var lastRow = $('#activite div:last-child');
+		var numact = lastRow.find('.numact');
+		
+		i = parseInt(n) + 1;
+		
+		numact.text(i);
+		
+		$(lastRow).prepend(content);
+	}
+	function ajout() {
+		$btPlus = $('#btplus');
+		clic();
+	}
+	
+	ajout();
+	
+	function clic() {
+		$btPlus.on('click', function(e){
+			$(this).parent().clone().appendTo('#activite');
+			count(i);
+			$(this).remove();
+			ajout();
+			e.preventDefault();
+		});
+	}
+});
+</script>

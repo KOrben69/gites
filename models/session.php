@@ -13,8 +13,7 @@ class session {
 		if($nb > 0){
 			if($mdp == $data['mdp']) {
 				$_SESSION['id_user'] = $data['id_user'];
-				$_SESSION['nom'] = $data['nom'];
-				$_SESSION['prenom'] = $data['prenom'];
+				$_SESSION['login'] = $login;
 				
 				return $_SESSION;
 			}

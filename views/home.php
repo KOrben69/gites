@@ -1,6 +1,6 @@
 <div id="content">
 	<h1>Home</h1>
-	<p>Que voulez-vous faire ?</p>
+	<p>Bonjour, <span style="color: #8ab928; font-style: italic;"><?php echo $_SESSION['login']; ?></span>, que voulez-vous faire ?</p>
 	<nav id="homeaction">
 		<ul>
 			<li><a href="#" class="btmodele">Créer une fiche</a></li>

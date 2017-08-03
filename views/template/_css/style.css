@@ -169,6 +169,10 @@ body {
 #content nav ul li:hover a {
 	background-color: #000;
 }
+span.numact {
+	color: #8ab928;
+	font-size: 1.4em;
+}
 label {
 	font-family: arial, sans-serif;
 	font-size: 0.8rem;
