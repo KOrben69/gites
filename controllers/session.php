@@ -7,7 +7,7 @@ switch($action) {
 			redirect('./index.php?controllers=home');
 		} else {
 			message('Login ou mot de passe non valide');
-			header('Location: ./index.php?controllers=register');
+			redirect('./index.php?controllers=register');
 		}
 	break;
 	case 'deconnexion':
