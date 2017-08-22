@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	$('.load').fadeOut();
 	var $btModele = $('a.btmodele');
 	var $listModele = $('#modele');
 	var $cross = $('#cross');
