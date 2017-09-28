@@ -46,7 +46,7 @@
 		<div class="row">
 			<fieldset id="prestation">
 				<legend>Prestation</legend>
-				<label>Prestation</label>
+				<label class="short">Prestation</label>
 				<select name="prestation">
 					<option>Gestion libre option ménage non compris</option>
 					<option>Journée</option>
@@ -65,7 +65,7 @@
 					<option>Location de salle</option>
 					<option>Nuitée seule</option>
 				</select><br>
-				<label>Arrivée pour</label>
+				<label class="short">Arrivée pour</label>
 				<select name="arriveeLoc">
 					<option>Dîner</option>
 					<option>Goûter</option>
@@ -75,7 +75,7 @@
 					<option>Location du gîte</option>
 					<option>A préciser</option>
 				</select><br>
-				<label>Départ pour</label>
+				<label class="short">Départ pour</label>
 				<select name="departLoc">
 					<option>Petit déjeuner avec panier repas</option>
 					<option>Petit déjeuner</option>
@@ -92,7 +92,7 @@
 					<option>Brunch</option>
 					<option>Goûter avec un panier repas pour le dîner</option>
 				</select><br>
-				<label>Partage</label>
+				<label class="short">Partage</label>
 				<select name="partage">
 					<option>A préciser</option>
 					<option>Partage possible avec un autre groupe</option>
@@ -101,7 +101,7 @@
 					<option>Partage impossible avec un autre groupe</option>
 					<option>Partage avec un autre groupe</option>
 				</select><br>
-				<label>Motif</label>
+				<label class="short">Motif</label>
 				<select name="motif">
 					<option>A préciser</option>
 					<option>Taille du groupe p/ capacité</option>
@@ -111,7 +111,7 @@
 					<option>Groupe en gestion libre</option>
 					<option>Autre groupe en partage</option>
 				</select><br>
-				<label>TS</label>
+				<label class="short">TS</label>
 				<select name="ts">
 					<option>Exonération (séjour d'enfants)</option>
 					<option>Exonération (adultes handicap)</option>
@@ -119,6 +119,32 @@
 					<option>Exonération (séjour ANNULE)</option>
 					<option>A payer</option>
 				</select><input type="text" name="??" style="display: inline-block; width: 50px;">€ x <input type="text" name="??" style="display: inline-block; width: 50px;"> = <input type="text" name="??" style="display: inline-block; width: 70px;"><br>
+				<label>Nombre d'enfants</label><input type="text" name="nbenfant"><label>Nombre d'adultes</label><input type="text" name="nbadulte">
+				<select name="bebe" class="short">
+					<option>Bébés (gratuits)</option>
+					<option>Bébés et petits (gratuits)</option>
+				</select><br>
+				<label>Nombre d'accompagnateur</label><input type="text" name="nbaccompagnateur" style="display: inline-block; width: 50px;">
+				<select name="infoaccompagnateur" class="short">
+					<option>Adultes</option>
+					<option>Accompagnateur</option>
+					<option>Educateurs</option>
+					<option>Enseignants</option>
+					<option>Enseignants + Animateurs</option>
+					<option>Personnes</option>
+				</select>
+				<label>Nombre de gratuité</label><input type="text" name="nbgratuite" style="display: inline-block; width: 50px;">
+				<select name="infogratuite" class="short">
+					<option>Gratuité(s)</option>
+					<option>-</option>
+				</select><br>
+				<label>Nombre de conducteur</label><input type="text" name="nbconducteur" style="display: inline-block; width: 50px;">
+				<select name="infoconducteur" class="short">
+					<option>Chauffeurs</option>
+					<option>-</option>
+				</select>
+				<label>Nos anims BAFA</label><input type="text" name="nbbafa" style="display: inline-block; width: 50px;"><br>
+				JS somme total bouche
 			</fieldset>
 		</div>
 		<div class="row">

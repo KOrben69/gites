@@ -116,6 +116,7 @@
 					<option>Exonération (séjour ANNULE)</option>
 					<option>A payer</option>
 				</select><input type="text" name="??" style="display: inline-block; width: 50px;">€ x <input type="text" name="??" style="display: inline-block; width: 50px;"> = <input type="text" name="??" style="display: inline-block; width: 70px;"><br>
+				<label>Nombre d'enfants</label><input type="text" name="nbenfant"> /  <label>Nombre d'adultes</label><input type="text" name="nbadulte"><br>
 			</fieldset>
 		</div>
 		<div class="row">
